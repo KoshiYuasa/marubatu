@@ -1,0 +1,161 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.main{
+    font-size:1.2rem;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to right, #349383,#337cbccf) ;
+    overflow:hidden;
+    font-family: "Bitter", serif;
+    position:relative;
+}
+
+nav{
+    display:flex;
+    width:80%;
+    margin:20px auto;
+    align-items: center;
+    font-weight: 550;
+    position: sticky;
+    z-index: 1;
+}
+
+.nav-links{
+    flex:1;
+    text-align:right;
+}
+
+
+.nav-links li{
+    list-style:none;
+}
+
+.logo-area{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width:20%;
+    height: 20%;
+    margin-right: 12px;
+}
+
+.nav-links ul li{
+    display: inline-block;
+    padding:0 2rem;
+}
+
+.nav-links ul a{
+    font-weight: 600;
+    color: #ffffff7e;
+    text-decoration: none;
+    transition:0.3s;
+}
+
+.nav-links ul a:hover{
+    color:#8d8681;
+}
+
+.information{
+    width:1000px;
+    height:1000px;
+    position:absolute;
+    top:50%;
+    left:-10%;
+    transform:translateY(-50%);
+}
+
+#circle{
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    
+    border-radius:50%;
+    top:0;
+    left:0;
+    transform:rotate(0deg);
+    transition: 1s;
+}
+
+.future{
+    display:flex;
+    position:absolute;
+    color:rgba(255, 255, 255, 0.603);
+}
+
+.future img{
+    width:70px;
+}
+
+.future div{
+    margin: left 20px;
+}
+
+.fiture div a{
+    margin-top:8px;
+}
+
+.one{
+    
+    top: 450px;
+    right:70px;
+    z-index: -1;
+}
+
+.two{
+    top:100px;
+    left:340px;
+    transform:rotate(-90deg);
+    z-index: 0;
+}
+
+.three{
+    bottom:450px;
+    left:50px;
+    transform:rotate(-180deg);
+    z-index: 0;
+}
+
+.face{
+    position:absolute;
+    width:210px;
+    height: 290px;
+    top:50%;
+    transform: translateY(-50%);
+    left:40%;
+    z-index:1;
+}
+
+.control{
+    position: absolute;
+   
+    top:50%;
+    left:160%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+#upB{
+    cursor:pointer;
+}
+
+#downB{
+    cursor:pointer;
+    transform:rotate(-180deg);
+}
+
+.overlay{
+    width:0;
+    height: 0;
+    border-top: 520px solid #fff;
+    border-right: 520px solid transparent;
+    border-bottom: 520px solid #fff;
+    border-left: 520px solid #fff;
+    position: absolute;
+    z-index: 1;
+}
